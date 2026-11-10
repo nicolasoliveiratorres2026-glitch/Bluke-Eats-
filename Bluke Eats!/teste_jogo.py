@@ -88,7 +88,7 @@ def cima():
     if bluke.distance(comida) < 100:
             bluke.shape("bluke_comendo_cima.png")
     if bluke.distance(comida) < 70:
-            comida.goto(random.randint(-200, 200), random.randint(-200, 200)
+            comida.goto(random.randint(-200, 200), random.randint(-200, 200))
             pontos += 1
     
 def baixo():
