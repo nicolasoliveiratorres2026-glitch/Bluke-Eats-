@@ -88,8 +88,7 @@ def cima():
     if bluke.distance(comida) < 100:
             bluke.shape("bluke_comendo_cima.png")
     if bluke.distance(comida) < 70:
-            comida.goto(random.randint(-200, 200), random.randint(-200, 200))
-            winsound.PlaySound("bluke_comeu.wav", winsound.SND_ASYNC)
+            comida.goto(random.randint(-200, 200), random.randint(-200, 200)
             pontos += 1
     
 def baixo():
@@ -100,7 +99,6 @@ def baixo():
         bluke.shape("bluke_comendo_baixo.png")
     if bluke.distance(comida) < 70:
             comida.goto(random.randint(-200, 200), random.randint(-200, 200))
-            winsound.PlaySound("bluke_comeu.wav", winsound.SND_ASYNC)
             pontos += 1
 
 def direita():
@@ -111,7 +109,6 @@ def direita():
             bluke.shape("bluke_comendo_direita.png")
     if bluke.distance(comida) < 70:
             comida.goto(random.randint(-200, 200), random.randint(-200, 200))
-            winsound.PlaySound("bluke_comeu.wav", winsound.SND_ASYNC)
             pontos += 1
     
 def esquerda():
@@ -122,7 +119,6 @@ def esquerda():
             bluke.shape("bluke_comendo_esquerda.png")
     if bluke.distance(comida) < 70:
             comida.goto(random.randint(-200, 200), random.randint(-200, 200))
-            winsound.PlaySound("bluke_comeu.wav", winsound.SND_ASYNC)
             pontos += 1
 
 #Definindo quais teclas clicar para ativar as funções de movimento
