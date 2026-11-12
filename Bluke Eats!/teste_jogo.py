@@ -84,7 +84,8 @@ def mover():
 def cima():
     global pontos
     bluke.shape("bluke_cima.png")
-    bluke.setheading(90)
+    if bluke.setheading() != 270:
+        bluke.setheading(90)
     if bluke.distance(comida) < 100:
             bluke.shape("bluke_comendo_cima.png")
     if bluke.distance(comida) < 70:
@@ -94,7 +95,8 @@ def cima():
 def baixo():
     global pontos
     bluke.shape("bluke_baixo.png")
-    bluke.setheading(270)
+    if bluke.setheading() != 90:
+        bluke.setheading(270)
     if bluke.distance(comida) < 100:
         bluke.shape("bluke_comendo_baixo.png")
     if bluke.distance(comida) < 70:
@@ -104,7 +106,8 @@ def baixo():
 def direita():
     global pontos
     bluke.shape("bluke_direita.png")
-    bluke.setheading(0)
+    if bluke.setheading() != 180:
+        bluke.setheading(0)
     if bluke.distance(comida) < 100:
             bluke.shape("bluke_comendo_direita.png")
     if bluke.distance(comida) < 70:
@@ -114,7 +117,8 @@ def direita():
 def esquerda():
     global pontos
     bluke.shape("bluke_esquerda.png")
-    bluke.setheading(180)
+    if bluke.setheading() != 0:
+        bluke.setheading(180)
     if bluke.distance(comida) < 100:
             bluke.shape("bluke_comendo_esquerda.png")
     if bluke.distance(comida) < 70:
